@@ -93,3 +93,7 @@ inner join auditory a ON a.auditory_course = c.course_id
 inner join topics tp ON tp.topic_course = c.course_id
 inner join course_benefits cb ON cb.benefit_course  = c.course_id
 inner join questions q ON q.questions_course = c.course_id where c.course_id = $1;
+
+-- admin
+
+insert into admin(admin_login, admin_password) values('admin', 'admin')
